@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lib/BootstrapIcon/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../lib/Swiper/Swiper.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="tablet:hidden">
+            <div class="w-full px-20 desktop:px-10 py-3 bg-[#FBECF2] flex justify-between">
+                <div class="w-3/12 desktop:w-2/12">
+                    <img src="../img/Afagh.png" alt="logo" class="h-14">
+                </div>
+                <div class="w-6/12 desktop:w-5/12 flex items-center px-20 desktop:px-5">
+                    <input type="text"
+                        class="w-10/12 py-1 px-3  rounded-r-xl bg-transparent border-primary border focus-visible:outline-none"
+                        placeholder="نام محصول ...">
+                    <button
+                        class="w-2/12 py-1 border border-primary rounded-l-xl bg-primary text-white hover:bg-dark transition-all duration-300"><i
+                            class="bi bi-search"></i></button>
+                </div>
+                <div class="w-3/12 desktop:w-5/12 flex items-center justify-end">
+                    <a href="" class="px-3 text-2xl text-primary"><i class="bi bi-bag-fill"></i></a>
+                    <a href="" class="px-3 text-2xl text-primary"><i class="bi bi-heart-fill"></i></a>
+                    <a href="" class="btn-primary mr-4 text-lg desktop:text-sm"><i
+                            class="bi bi-person-fill text-base"></i> حساب
+                        کاربری</a>
+                </div>
+            </div>
+            <nav class="w-full py-3 border-b border-primary px-20 flex justify-center">
+                <a href="" class="text-xl px-3">صفحه اصلی</a>
+                <div class="text-xl px-3 block relative megamenunav">
+                    <a href="">مانتو</a> <i class="bi bi-chevron-down"></i>
+                    <div
+                        class="absolute py-2 px-5 flex flex-col items-center top-8 bg-primary rounded-lg w-40 text-white transition-all duration-300 invisible opacity-0">
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                    </div>
+                </div>
+                <div class="text-xl px-3 block relative megamenunav">
+                    <a href="">پیراهن</a> <i class="bi bi-chevron-down"></i>
+                    <div
+                        class="absolute py-2 px-5 flex flex-col items-center top-8 bg-primary rounded-lg w-40 text-white transition-all duration-300 invisible opacity-0">
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                    </div>
+                </div>
+                <a href="" class="text-xl px-3">تماس با ما</a>
+                <a href="" class="text-xl px-3">پیگیری سفارش</a>
+            </nav>
+        </div>
+        <div class="hidden tablet:flex fixed bottom-0 left-0 w-full py-4 bg-[#f7dce7] z-20">
+            <div class="w-1/4 text-center">
+                <i class="bi bi-list text-2xl" id="megamenunavOpen"></i>
+                <!-- <p class="font-bold">منو</p> -->
+            </div>
+            <div class="w-1/4 text-center">
+                <i class="bi bi-house-fill text-2xl text-primary"></i>
+                <!-- <p class="font-bold">خانه</p> -->
+            </div>
+            <div class="w-1/4 text-center">
+                <i class="bi bi-heart text-2xl"></i>
+                <!-- <p class="font-bold">جستوجو</p> -->
+            </div>
+            <div class="w-1/4 text-center">
+                <i class="bi bi-bag text-2xl"></i>
+                <!-- <p class="font-bold">سبد خرید</p> -->
+            </div>
+        </div>
+        <div class="fixed w-full h-full bg-[#f7dce7] py-10 px-5 tablet:flex flex-col hidden left-full z-50 overflow-y-scroll transition-all duration-300"
+            id="mobileMenu">
+            <div class="flex justify-start">
+                <i class="bi bi-x text-4xl text-primary" id="mobileMenuClose"></i>
+            </div>
+            <div class="w-full flex items-center mb-10">
+                <input type="text"
+                    class="w-10/12 py-2 px-3  rounded-r-full bg-transparent border-primary border focus-visible:outline-none"
+                    placeholder="نام محصول ...">
+                <button
+                    class="w-2/12 py-2 border border-primary rounded-l-full bg-primary text-white hover:bg-dark transition-all duration-300"><i
+                        class="bi bi-search"></i></button>
+            </div>
+            <div class="flex flex-col items-center-center">
+                <a href="" class="text-xl px-3 text-center my-2">صفحه اصلی</a>
+                <div class="text-xl px-3 block megamenunavmobile text-center my-2">
+                    <a href="">مانتو</a> <i
+                        class="bi bi-chevron-down mr-5 before:transition-all before:duration-200"></i>
+                    <div class="py-2 px-5 flex flex-col items-center bg-primary rounded-lg w-40 text-white mx-auto">
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                    </div>
+                </div>
+                <div class="text-xl px-3 block megamenunavmobile text-center my-2">
+                    <a href="">پیراهن</a> <i
+                        class="bi bi-chevron-down mr-5 before:transition-all before:duration-200"></i>
+                    <div class="py-2 px-5 flex flex-col items-center bg-primary rounded-lg w-40 text-white mx-auto">
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                        <a href="" class="mb-2">مانتو بهاره</a>
+                    </div>
+                </div>
+                <a href="" class="text-xl px-3 text-center my-2">تماس با ما</a>
+                <a href="" class="text-xl px-3 text-center my-2">پیگیری سفارش</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex justify-center items-center py-24">
+        <form class="bg-white shadow-xl rounded-lg px-10 py-10 w-1/2">
+            <h1 class="mb-8 text-2xl font-bold text-center">ورود به مانتو آفاق</h1>
+            <div class="mb-4">
+                <label for="" class="block">نام و نام خانوادگی</label>
+                <input type="text" class="input-login w-full" placeholder="فرزاد حیدری">
+            </div>
+            <div class="mb-4">
+                <label for="" class="block">شماره موبایل</label>
+                <input type="text" class="input-login w-full" placeholder="09120000000">
+            </div>
+            <div class="mb-4">
+                <label for="" class="block">ایمیل(اختیاری)</label>
+                <input type="text" class="input-login w-full" placeholder="example@domain.com">
+            </div>
+            <div class="mb-4">
+                <label for="" class="block">رمز عبور</label>
+                <input type="password" class="input-login w-full" placeholder="رمز عبور خود را وارد کنید">
+            </div>
+            <div class="mb-4">
+                <label for="" class="block">تکرار رمز عبور</label>
+                <input type="password" class="input-login w-full" placeholder="رمز عبور خود را وارد کنید">
+            </div>
+            <div class="flex mt-5">
+                <a href="" class="btn-primary w-full text-center">ایجاد حساب کاربری</a>
+            </div>
+            <p class="text-center text-sm mt-3">قبلا ثبت نام کرده اید؟ <a href="#" class="text-primary">ثبت نام
+                    کنید</a></p>
+        </form>
+    </main>
+
+    <footer class="flex flex-col px-16 py-10 bg-textgray text-white tablet:pb-36">
+        <div class="flex tablet:flex-wrap justify-between px-10">
+            <h2 class="text-xl tablet:w-full tablet:text-base tablet:text-center font-bold">ورود به باشگاه مشتریان مانتو
+                آفاق</h2>
+            <div class="w-5/12 tablet:w-full tablet:flex-wrap flex justify-center">
+                <input type="text" placeholder="شماره موبایل"
+                    class="px-5 py-1 rounded-lg border border-dark border-b-2 border-b-primary bg-transparent w-8/12 ml-2 tablet:w-full tablet:m-0 tablet:my-3">
+                <button class="btn-primary hover:bg-primary py-1 border border-primary tablet:w-full">ثبت</button>
+            </div>
+        </div>
+        <div class="h-px w-full bg-light my-10 tablet:mb-4"></div>
+        <div class="flex tablet:flex-wrap">
+            <div class="w-3/12 tablet:w-full tablet:mt-10 flex flex-col items-center">
+                <p class="text-xl mb-2 font-bold">محصولات</p>
+                <div class="w-8/12 mx-auto h-px bg-primary mb-5"></div>
+                <a href="" class="text-lg hover:text-primary mb-2">مانتو</a>
+                <a href="" class="text-lg hover:text-primary mb-2">شلوار</a>
+                <a href="" class="text-lg hover:text-primary mb-2">محصولات ویژه</a>
+            </div>
+            <div class="w-3/12 tablet:w-full tablet:mt-10 flex flex-col items-center">
+                <p class="text-xl mb-2 font-bold">حساب کاربری</p>
+                <div class="w-8/12 mx-auto h-px bg-primary mb-5"></div>
+                <a href="" class="text-lg hover:text-primary mb-2">ورود / ثبت نام</a>
+                <a href="" class="text-lg hover:text-primary mb-2">سفارشات</a>
+                <a href="" class="text-lg hover:text-primary mb-2">پیگیری سفارشات</a>
+            </div>
+            <div class="w-3/12 tablet:w-full tablet:mt-10 pt-2">
+                <p class="text-base break-words"><span class="text-primary">آدرس : &nbsp;</span>تهران نازی آباد ، خیابان
+                    اکبر مشهدی ، مجتمع لوتوس مال ، طبقه همکف ، پلاک 204 ، مانتو سرای آفاق</p>
+                <p class="mt-7"><span class="font-bold">شماره تلفن :</span> 09126963605</p>
+                <p><span class="font-bold">شماره تلفن :</span> 09126963605</p>
+            </div>
+            <div class="w-3/12 tablet:w-full tablet:mt-10">
+                <div class="h-20"></div>
+                <div class="flex justify-center">
+                    <a href="#"
+                        class="mx-5 h-8 w-8 rounded-full bg-transparent border border-r-light flex justify-center items-center hover:text-primary hover:border-primary transition-all duration-300"><i
+                            class="bi bi-instagram before:!align-middle"></i></a>
+                    <a href="#"
+                        class="mx-5 h-8 w-8 rounded-full bg-transparent border border-r-light flex justify-center items-center hover:text-primary hover:border-primary transition-all duration-300"><i
+                            class="bi bi-telegram before:!align-middle"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="h-px w-full bg-light my-10"></div>
+        <div class="flex justify-center tablet:flex-wrap">
+            <p class="tablet:w-full">کلیه حقوق برای <span class="text-primary">مانتو آفاق</span> محفوظ می باشد.</p>
+            <p class="mx-5 tablet:w-full tablet:m-0 tablet:text-center">طراحی شده توسط : <a
+                    href="https://irandevelopress.com">Irandevelopress</a></p>
+        </div>
+    </footer>
+</body>
+
+<script src="../lib/jquery-3.6.0.min.js"></script>
+<script src="../js/js.js"></script>
+<script src="../lib/Swiper/Swiepr.min.js"></script>
+<script>
+    var swiper = new Swiper(".MySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1
+            },
+            639: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            767: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    });
+    var blogswiper = new Swiper(".BlogSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".blogswipernext",
+            prevEl: ".blogswiperprev",
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1
+            },
+            639: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            767: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    });
+</script>
+
+</html>

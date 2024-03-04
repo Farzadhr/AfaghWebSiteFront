@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  direction: rtl;
+  font-family: Samim;
+}
+.swiper-pagination-bullet-active {
+  @apply !bg-primary;
+}
+@layer base {
+  @font-face {
+    font-family: Samim;
+    font-weight: bold;
+    src: url(../fonts/Samim-Bold-FD.eot), url(../fonts/Samim-Bold-FD.ttf),
+      url(../fonts/Samim-Bold-FD.woff), url(../fonts/Samim-Bold-FD.woff2);
+  }
+  @font-face {
+    font-family: Samim;
+    font-weight: normal;
+    src: url(../fonts/Samim-FD.eot), url(../fonts/Samim-FD.ttf),
+      url(../fonts/Samim-FD.woff), url(../fonts/Samim-FD.woff2);
+  }
+  body {
+    @apply text-textgray bg-light;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-5 py-1 text-white bg-primary rounded-lg shadow-md hover:bg-dark transition-all duration-300;
+  }
+  .btn-dark {
+    @apply px-5 py-1 text-white bg-dark rounded-lg shadow-md hover:bg-primary transition-all duration-300;
+  }
+  .megamenunav:hover div {
+    visibility: visible;
+    opacity: 1;
+  }
+  .primarylightgradbackground {
+    background: rgb(255, 116, 174);
+    background: linear-gradient(
+      97deg,
+      rgba(255, 116, 174, 1) 10%,
+      rgba(249, 0, 104, 0.865983893557423) 77%
+    );
+  }
+  .productSizeCard {
+    @apply w-6 h-6 rounded-full border border-dark flex justify-center items-center mx-1 text-xs;
+  }
+  .pagination-bullet {
+    @apply btn-primary w-8 h-8 flex justify-center items-center px-0 rounded-full mx-1;
+  }
+  .pagination-bullet-selected {
+    @apply btn-primary w-8 h-8 flex justify-center items-center px-0 rounded-full mx-1 bg-dark;
+  }
+  .input-login {
+    @apply appearance-none outline-none border border-[#9d9d9d] border-b-2 border-b-primary px-3 py-1 rounded-lg;
+  }
+  .input-dark {
+    @apply appearance-none outline-none border border-[#9d9d9d] border-b-2 border-b-dark px-3 py-1 rounded-lg;
+  }
+  .magnify .magnifier {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    z-index: 20;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-size: 1000%;
+    background-repeat: no-repeat;
+    margin-left: -100px !important;
+    margin-top: -100px !important;
+    pointer-events: none;
+    display: none;
+  }
+  .productSizeCardMain {
+    @apply w-8 h-8 rounded-full border border-dark flex justify-center items-center mx-1 text-sm cursor-pointer transition-all duration-300;
+  }
+  .productSizeCardMainSelected {
+    @apply w-8 h-8 rounded-full border border-dark bg-dark flex justify-center items-center mx-1 text-sm text-white;
+  }
+  .productColorCardMain {
+    @apply w-8 h-8 rounded-full flex justify-center items-center mx-1 cursor-pointer transition-all duration-300;
+  }
+  .productColorCardMainSelected {
+    @apply w-8 h-8 rounded-full border-4 border-dark flex justify-center items-center mx-1;
+  }
+  .titleProperty{
+    @apply text-lg font-bold;
+  }
+  .textProperty{
+    @apply mr-5;
+  }
+}
